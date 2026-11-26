@@ -76,7 +76,7 @@ Refer to the project's `supabase/README.md` for setup instructions.
 
 This is a personal application development project focused on family financial management, cloud integration, authentication, database security and synchronization.
 
-Repository: [ADAA-Family-Finance](https://github.com/abhijith4m/ADAA-Family-Finance)
+Repository: https://github.com/abhijith4m/PFMS
 
 ---
 
