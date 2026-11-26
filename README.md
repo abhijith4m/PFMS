@@ -42,6 +42,10 @@ The project combines a static web application hosted through GitHub Pages with S
 - GitHub Pages
 - Browser localStorage
 
+## Application Preview
+
+![PFMS Dashboard](screenshots/pfms-dashboard.png)
+
 ## 🏗️ Architecture
 
 - **Frontend:** Static web application
