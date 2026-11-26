@@ -1,20 +1,83 @@
-# ADAA Family Finance — Supabase Cloud Migration Package
+# PFMS — Personal Financial Management System
 
-This build adds optional Supabase cloud storage and authentication while retaining GitHub Pages as the static website host and localStorage as the browser cache.
+A personal and family financial management application designed to manage household finances, track transactions and provide secure cloud synchronization.
 
-## Included
-- `index.html` — ADAA application with Supabase sign-in, household onboarding, cloud loading/upload and automatic version-checked sync.
-- `supabase-config.js` — empty client configuration template. Add your Supabase Project URL and public anon/publishable key.
-- `supabase/schema.sql` — household tables, RLS policies, and secure RPC functions.
-- `supabase/README.md` — detailed setup and family member onboarding instructions.
+## 🚀 Overview
 
-## Important security notes
-- Never put a Supabase `service_role` or secret key in this repository or in browser JavaScript.
-- The public anon/publishable key is intended for browser use only when RLS and database grants are correctly configured.
-- Cloud users sign in using Supabase Auth. Household membership and roles are enforced by PostgreSQL policies and RPC logic.
-- `admin` can manage all ADAA data. `entry` can append transactions only; server-side checks reject replacing existing transactions or changing admin settings.
-- Existing local PINs and auto-lock settings are not uploaded to Supabase.
-- Download a JSON backup before the first upload or import.
+PFMS (Personal Financial Management System) is a personal project developed to simplify family financial tracking and management. The application integrates browser-based storage with optional cloud authentication and synchronization using Supabase.
 
-## First-time setup
-See `supabase/README.md`. The database cannot be connected until you create your own Supabase project and fill in `supabase-config.js`.
+The project combines a static web application hosted through GitHub Pages with Supabase for cloud storage, authentication and database security.
+
+## ✨ Features
+
+- Personal and household financial management
+- Transaction management
+- Household onboarding
+- User authentication with Supabase Auth
+- Optional cloud storage and synchronization
+- Local browser storage with `localStorage`
+- Version-checked synchronization
+- Household membership and role-based access
+- Admin and entry-level access roles
+- JSON backup and import support
+
+## 🔐 Access & Security
+
+- **Admin:** Manage household data and application settings.
+- **Entry:** Append transactions with server-side restrictions.
+- PostgreSQL Row Level Security (RLS)
+- Database policies and secure RPC functions
+- Supabase authentication
+- Client-side configuration uses the public anon/publishable key
+- Sensitive service-role keys are not exposed in browser code
+
+## 🛠️ Technologies Used
+
+- HTML
+- JavaScript
+- Supabase
+- PostgreSQL
+- Supabase Auth
+- Row Level Security (RLS)
+- GitHub Pages
+- Browser localStorage
+
+## 🏗️ Architecture
+
+- **Frontend:** Static web application
+- **Hosting:** GitHub Pages
+- **Local storage:** Browser localStorage
+- **Authentication:** Supabase Auth
+- **Cloud database:** Supabase / PostgreSQL
+- **Security:** RLS policies and database-level authorization
+
+## 📂 Project Structure
+
+| File / Folder | Description |
+|---|---|
+| `index.html` | Main PFMS application |
+| `supabase-config.js` | Supabase client configuration template |
+| `supabase/schema.sql` | Database schema, RLS policies and secure RPC functions |
+| `supabase/README.md` | Supabase configuration and onboarding instructions |
+
+## ☁️ Cloud Setup
+
+Cloud functionality requires a Supabase project.
+
+1. Create a Supabase project.
+2. Configure the Project URL and public anon/publishable key.
+3. Execute the database schema.
+4. Configure authentication and household onboarding.
+5. Configure the application and deploy through GitHub Pages.
+
+Refer to the project's `supabase/README.md` for setup instructions.
+
+## 📌 Project
+
+This is a personal application development project focused on family financial management, cloud integration, authentication, database security and synchronization.
+
+Repository: [ADAA-Family-Finance](https://github.com/abhijith4m/ADAA-Family-Finance)
+
+---
+
+*Developed as a personal project exploring web application development, cloud integration and secure data management.*
