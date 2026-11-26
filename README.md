@@ -1,87 +1,49 @@
-# PFMS — Personal Financial Management System
+## Architecture & Security
 
-A personal and family financial management application designed to manage household finances, track transactions and provide secure cloud synchronization.
+Detailed project documentation:
 
-## 🚀 Overview
+- [Application Architecture](docs/architecture.md)
+- [Security Design](docs/security.md)
 
-PFMS (Personal Financial Management System) is a personal project developed to simplify family financial tracking and management. The application integrates browser-based storage with optional cloud authentication and synchronization using Supabase.
+## Key Features
 
-The project combines a static web application hosted through GitHub Pages with Supabase for cloud storage, authentication and database security.
+- Centralized family financial management.
+- Income and expense tracking.
+- Monthly budget management.
+- Savings goals.
+- EMI tracking.
+- Recurring bills.
+- Family-member-based expense tracking.
+- Supabase central database integration.
+- Authentication and access control.
+- JSON backup and restore.
+- CSV export.
+- Monthly report sharing.
 
-## ✨ Features
+## Technology Stack
 
-- Personal and household financial management
-- Transaction management
-- Household onboarding
-- User authentication with Supabase Auth
-- Optional cloud storage and synchronization
-- Local browser storage with `localStorage`
-- Version-checked synchronization
-- Household membership and role-based access
-- Admin and entry-level access roles
-- JSON backup and import support
-
-## 🔐 Access & Security
-
-- **Admin:** Manage household data and application settings.
-- **Entry:** Append transactions with server-side restrictions.
-- PostgreSQL Row Level Security (RLS)
-- Database policies and secure RPC functions
-- Supabase authentication
-- Client-side configuration uses the public anon/publishable key
-- Sensitive service-role keys are not exposed in browser code
-
-## 🛠️ Technologies Used
-
-- HTML
+- HTML5
+- CSS3
 - JavaScript
-- Supabase
-- PostgreSQL
-- Supabase Auth
-- Row Level Security (RLS)
 - GitHub Pages
-- Browser localStorage
+- Supabase Authentication
+- PostgreSQL
+- Row Level Security (RLS)
 
-## Application Preview
+## Security & Data Protection
 
-![PFMS Dashboard](screenshots/pfms-dashboard.png)
+- Centralized cloud database.
+- Authentication-based access.
+- Database-level security controls.
+- Row Level Security.
+- JSON backup and recovery.
+- Separation of frontend and privileged backend credentials.
 
-## 🏗️ Architecture
+## Project Links
 
-- **Frontend:** Static web application
-- **Hosting:** GitHub Pages
-- **Local storage:** Browser localStorage
-- **Authentication:** Supabase Auth
-- **Cloud database:** Supabase / PostgreSQL
-- **Security:** RLS policies and database-level authorization
-
-## 📂 Project Structure
-
-| File / Folder | Description |
-|---|---|
-| `index.html` | Main PFMS application |
-| `supabase-config.js` | Supabase client configuration template |
-| `supabase/schema.sql` | Database schema, RLS policies and secure RPC functions |
-| `supabase/README.md` | Supabase configuration and onboarding instructions |
-
-## ☁️ Cloud Setup
-
-Cloud functionality requires a Supabase project.
-
-1. Create a Supabase project.
-2. Configure the Project URL and public anon/publishable key.
-3. Execute the database schema.
-4. Configure authentication and household onboarding.
-5. Configure the application and deploy through GitHub Pages.
-
-Refer to the project's `supabase/README.md` for setup instructions.
-
-## 📌 Project
-
-This is a personal application development project focused on family financial management, cloud integration, authentication, database security and synchronization.
-
-Repository: https://github.com/abhijith4m/PFMS
+- **Live Application:** https://abhijith4m.github.io/PFMS/
+- **GitHub Repository:** https://github.com/abhijith4m/PFMS
 
 ---
 
-*Developed as a personal project exploring web application development, cloud integration and secure data management.*
+Developed as a hands-on application development project exploring family financial management, cloud database integration, authentication, access control and data recovery.
